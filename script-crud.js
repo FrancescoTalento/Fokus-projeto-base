@@ -143,7 +143,7 @@ function criarLiTarefa(tarefaJson){
 
     //a imagem que ira ser mostrada como o butao
     const imagemBtn = document.createElement("img");
-    imagemBtn.src = "/imagens/edit.png";
+    imagemBtn.src = "imagens/edit.png";
     btnEdita.append(imagemBtn); // add a img ao butao
 
     li.append(btnEdita); // add o btn ao li
