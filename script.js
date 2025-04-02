@@ -111,10 +111,10 @@ function iniciarOuPausar(){
 
 function alteraBtnTimer(){
     if(intervalo === null || cicliFinalizado === true){ // se pausado faca
-        btnPausePlayTimer.innerHTML = `<img class="app__card-primary-butto-icon" src="/imagens/play_arrow.png" alt=""> 
+        btnPausePlayTimer.innerHTML = `<img class="app__card-primary-butto-icon" src="../imagens/play_arrow.png" alt=""> 
         <span>Começar</span>`;
     }else if(intervalo || cicliFinalizado === false){ // se playing faca
-        btnPausePlayTimer.innerHTML = `<img class="app__card-primary-butto-icon" src="/imagens/pause.png" alt="">           
+        btnPausePlayTimer.innerHTML = `<img class="app__card-primary-butto-icon" src="../imagens/pause.png" alt="">           
         <span>Pausar</span>`;
     }
 }
@@ -144,7 +144,7 @@ butoes.forEach((button)=>{
 })
 
 function alterContext(contexto){
-    imgFigure.src = `/imagens/${contexto}.png`;
+    imgFigure.src = `../imagens/${contexto}.png`;
     html.setAttribute("data-contexto", contexto);
 
     switch (contexto) {
