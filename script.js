@@ -144,7 +144,7 @@ butoes.forEach((button)=>{
 })
 
 function alterContext(contexto){
-    imgFigure.src = `../imagens/${contexto}.png`;
+    imgFigure.src = `imagens/${contexto}.png`;
     html.setAttribute("data-contexto", contexto);
 
     switch (contexto) {
